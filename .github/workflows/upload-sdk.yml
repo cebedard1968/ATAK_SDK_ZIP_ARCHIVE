@@ -12,5 +12,5 @@ jobs:
       - name: Upload SDK
         uses: actions/upload-artifact@v3
         with:
-          name: sdk
+          name: ATAK-CIV-5.1.0.24-SDK
           path: ATAK-CIV-5.1.0.24-SDK.zip
