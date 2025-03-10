@@ -1,0 +1,16 @@
+name: Upload SDK
+on:
+  workflow_dispatch  # Manually triggered
+
+jobs:
+  upload-sdk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Upload SDK
+        uses: actions/upload-artifact@v3
+        with:
+          name: sdk
+          path: sdk.zip
